@@ -7,8 +7,6 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-    cout << "Hello World" << endl;
-
     int dataBlockSize = 1024;    // size of each write (in ints)
     int writeCount = 256 * 1024; // times to write the buffer
     string filename = "test.dat";
