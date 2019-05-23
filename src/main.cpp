@@ -19,10 +19,10 @@ int main(int argc, char **argv)
     int *buffer = new int[dataBlockSize];         // data buffer to write
     clock_t *timeMarks = new clock_t[writeCount]; // buffer to store time marks
 
-    cout << "sizeof int = " << sizeof buffer[0] << endl;
-    cout << "sizeof buffer = " << sizeof buffer[0] * dataBlockSize << endl;
-    cout << "max random number = " << RAND_MAX << endl;
-    cout << "CLOCKS_PER_SEC = " << CLOCKS_PER_SEC << endl;
+    cerr << "sizeof int = " << sizeof buffer[0] << endl;
+    cerr << "sizeof buffer = " << sizeof buffer[0] * dataBlockSize << endl;
+    cerr << "max random number = " << RAND_MAX << endl;
+    cerr << "CLOCKS_PER_SEC = " << CLOCKS_PER_SEC << endl;
 
     // populate buffer with random data
     srand(time(NULL));
