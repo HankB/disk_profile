@@ -35,7 +35,7 @@ int main(int argc, char **argv)
     for (int i = 0; i < writeCount; i++)
     {
         testFile.write((const char *)buffer, sizeof buffer[0] * dataBlockSize);
-        testFile.flush();
+        //testFile.flush();
         now = clock();
         timeMarks[i] = now - previous;
         previous = now;
