@@ -28,11 +28,14 @@ int main(int argc, char **argv)
         buffer[i] = rand();
 
     // write the data
-    ofstream testFile(filename);
+    ofstream testFile;
+    testFile.rdbuf()->pubsetbuf(0, 0);
+    testFile.open(filename);
     previous = clock();
     for (int i = 0; i < writeCount; i++)
     {
         testFile.write((const char *)buffer, sizeof buffer[0] * dataBlockSize);
+        testFile.flush();
         now = clock();
         timeMarks[i] = now - previous;
         previous = now;
