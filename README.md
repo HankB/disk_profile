@@ -1,5 +1,10 @@
 # disk_profile
+
 profile write (and read) performance over time.
+
+## Status
+
+This project has been moved to [bitbucket](https://gitlab.com/HankB/disk_profile) due to Microsoft's cavalier use of my code via Copilot.
 
 ## Motivation
 
@@ -10,11 +15,6 @@ This is intended to be a somewhat different kind of disk benchmark. Looking at t
 Developed and tested in Linux (Debian, Raspbian.)
 
 `cmake` and `g++`
-
-## Status
-
-Initial `cmake` config (`CMakeLists.txt`) copied and tailored.
-"Hello World" C++ source coded, built and run to validate `cmake` config.
 
 ## Build
 
